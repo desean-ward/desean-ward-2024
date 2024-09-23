@@ -34,7 +34,7 @@ const Hero = () => {
 
       <ContentWrapper>
         <ContentContainer>
-            {/* Subheading */}
+          {/* Subheading */}
           <SubHeading>Dynamic Web Magic with Next.js</SubHeading>
 
           {/* Animated Text */}
@@ -42,7 +42,8 @@ const Hero = () => {
 
           {/* Intro */}
           <Intro>
-            Hi, I&apos;m De Sean, a Next.js Full Stack Software Engineer
+            Hi, I&apos;m <span className='text-purple'>De Sean</span>, a Next.js
+            Full Stack Software Engineer
           </Intro>
 
           {/* Show My Work Button */}
