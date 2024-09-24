@@ -47,13 +47,12 @@ const Hero = () => {
           </Intro>
 
           {/* Show My Work Button */}
-          <a href='#about'>
-            <MagicButton
-              title='Show my work'
-              icon={<FaLocationArrow />}
-              position='right'
-            />
-          </a>
+          <a href='#about' />
+          <MagicButton
+            title='Show my work'
+            icon={<FaLocationArrow />}
+            position='right'
+          />
         </ContentContainer>
       </ContentWrapper>
     </HeroWrapper>
