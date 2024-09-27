@@ -3,17 +3,17 @@ import Hero from "@/components/hero/hero.component";
 import Projects from "@/components/projects/projects.component";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "../../data";
+import Collegues from "@/components/colleagues/colleagues.component";
 
 export default function Home() {
   return (
     <main className='relative bg-black-100 flex items-center justify-center flex-col overflow-hidden mx-auto sm:px-10 px:-5'>
       <div className='max-w-7xl w-full'>
-        <FloatingNav
-          navItems={navItems}
-        />
+        <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
         <Projects />
+        <Collegues />
       </div>
     </main>
   );
