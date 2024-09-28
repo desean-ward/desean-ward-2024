@@ -106,7 +106,7 @@ export const projects = [
     id: 4,
     title: "Brainwave",
     des: "Introducing Brainwave, a fully-featured AI landing page.",
-    img: "/brainwave.svg",
+    img: "/brainwave.png",
     iconLists: ["/next.svg", "/tail.svg", "/styled-components.png"],
     link: "https://dw-brainwave.vercel.app",
     gitUrl: "https://github.com/desean-ward/brainwave",

@@ -77,11 +77,11 @@ export const IconsContainer = tw.div`
 
 export const Icon = tw.div`
     border 
-    border-white/[0.2] 
+    border-white/[0.3] 
     rounded-full 
     bg-black 
-    lg:w-10 
-    lg:h-10 
+    lg:w-16 
+    lg:h-16
     w-8 
     h-8 
     flex 

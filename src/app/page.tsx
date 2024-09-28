@@ -5,6 +5,7 @@ import { FloatingNav } from "@/components/ui/floating-nav.ui";
 import { navItems } from "../../data";
 import Collegues from "@/components/colleagues/colleagues.component";
 import Experience from "@/components/experience/experience.component";
+import MyApproach from "@/components/my-approach/my-approach.component";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Projects />
         <Collegues />
         <Experience />
+        <MyApproach />
       </div>
     </main>
   );
