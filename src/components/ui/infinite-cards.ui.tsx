@@ -15,6 +15,7 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title: string;
+    img: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -66,7 +67,7 @@ export const InfiniteMovingCards = ({
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
+        containerRef.current.style.setProperty("--animation-duration", "100s");
       }
     }
   };
@@ -108,9 +109,9 @@ export const InfiniteMovingCards = ({
               <div className='relative z-20 mt-6 flex flex-row items-center'>
                 <span className='flex items-center gap-1'>
                   {/* Profile Photo */}
-                  <div className='me-3'>
+                  <div className='me-3 rounded-full overflow-hidden'>
                     <Image
-                      src='/profile.svg'
+                      src={item.img}
                       width={40}
                       height={40}
                       alt='profile'

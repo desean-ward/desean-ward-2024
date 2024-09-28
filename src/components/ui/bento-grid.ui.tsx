@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { BackgroundGradientAnimation } from "./GradientBg";
-import { GlobeDemo } from "./GridGlobe";
+import { BackgroundGradientAnimation } from "./gradient-bg.ui";
+import { GlobeDemo } from "./grid-globe.ui";
 import animationData from "../../../data/confetti.json";
 import Lottie from "react-lottie";
-import MagicButton from "./MagicButton";
+import MagicButton from "./magic-button.ui";
 import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
@@ -71,7 +71,7 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4, 7, 29, 1) 0%, rgba(59, 59, 68, 1) 26% rgba(93, 108, 111, 1) 100%)",
       }}
     >
-      <div className={`${id === 6 && 'flex justify-center'} h-full`}>
+      <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className='size-full absolute'>
           {img && (
             <Image
@@ -101,9 +101,7 @@ export const BentoGridItem = ({
         </div>
 
         {/* Background Animation */}
-        {id === 6 && (
-          <BackgroundGradientAnimation />
-        )}
+        {id === 6 && <BackgroundGradientAnimation />}
         {/* Content */}
         <div
           className={cn(

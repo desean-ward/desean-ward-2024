@@ -1,6 +1,6 @@
 import { FaLocationArrow } from "react-icons/fa";
-import MagicButton from "../ui/MagicButton";
-import { Spotlight } from "../ui/Spotlight";
+import MagicButton from "../ui/magic-button.ui";
+import { Spotlight } from "../ui/spotlight.ui";
 import {
   AnimatedHeading,
   ContentContainer,

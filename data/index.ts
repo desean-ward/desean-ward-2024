@@ -75,9 +75,15 @@ export const projects = [
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/three.svg", "/gsap.svg", "/styled-components.png"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/three.svg",
+      "/gsap.svg",
+      "/styled-components.png",
+    ],
     link: "https://dw-iphone15.vercel.app",
-    gitUrl: 'https://github.com/desean-ward/apple-clone'
+    gitUrl: "https://github.com/desean-ward/apple-clone",
   },
 
   {
@@ -103,38 +109,29 @@ export const projects = [
     img: "/brainwave.svg",
     iconLists: ["/next.svg", "/tail.svg", "/styled-components.png"],
     link: "https://dw-brainwave.vercel.app",
-    gitUrl: "https://github.com/desean-ward/brainwave"
+    gitUrl: "https://github.com/desean-ward/brainwave",
   },
 ];
 
 export const testimonials = [
   {
     quote:
+      "De Sean is a furious Technologist. I had the pleasure of watching De Sean lead the VB .NET team with great leadership, impressive communicational skills, and the amazing ability to understand the client. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. De Sean's enthusiasm for every facet of development truly stands out.",
+    img: "/angel-coats.jpg",
+    name: "Angel Coats",
+    title: "Operational Monitoring | Project Senior Rep",
+  },
+  {
+    quote:
       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    img: "",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    img: "",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
@@ -143,64 +140,55 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "i.c.stars",
+    img: "/icstars.webp",
+    // nameImg: "/publicicstars.webp",
+    website: "https://www.icstars.org",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "Blue Cross and Blue Shield",
+    img: "/bcbs-logo.svg",
+    // nameImg: "/publicicstars.webp",
+    website: "https://www.bcbs.com",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "Per Scholas",
+    img: "/perscholas-logo.svg",
+    // nameImg: "/publicicstars.webp",
+    website: "https://perscholas.org",
   },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Software Engineering Lite Virtual Experience Program",
+    desc: "Completed a simulation focused on the process of completing an engineering ticket; for a system in the credit-card rewards department of JPMorgan Chase & Co.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Full Stack Software Engineer",
+    desc: "Accrued 1500+ hours of training in Software Engineering utilizing the MERN stack.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+  {
+    id: 3,
+    title: "Software Engineer Enthusiast and Self-Educator",
+    desc: "For four years, I proactively honed my skills, in pursuit of transitioning from Front End Development to Full Stack Software Engineering.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    id: 4,
+    title: "Web Developer / Content Management / Systems Analyst",
+    desc: "While at Blue Cross and Blue Shield, Ieveloped and/or modified 100’s of web pages across multiple state divisions; while consistently meeting 98% SLA deadlines.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
   },
 ];
 

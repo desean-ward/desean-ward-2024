@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { projects } from "../../../data";
-import { PinContainer } from "../ui/3d-pin";
+import { PinContainer } from "../ui/3d-pin.ui";
 import {
   ProjectTitle,
   ImageContainer,

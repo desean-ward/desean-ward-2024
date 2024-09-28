@@ -1,14 +1,14 @@
 import tw from "tailwind-styled-components";
 
-export const ColleguesWrapper = tw.section`
+export const ColleaguesWrapper = tw.section`
     py-20 
 `;
 
-export const ColleguesContainer = tw.div`
+export const ColleaguesContainer = tw.div`
     flex 
     flex-col
     items-center 
-`
+`;
 
 export const Testimonials = tw.div`
     h-[50vh] 
@@ -20,4 +20,4 @@ export const Testimonials = tw.div`
     items-center 
     relative 
     overflow-hidden
-`
+`;

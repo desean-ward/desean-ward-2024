@@ -2,6 +2,7 @@ import tw from "tailwind-styled-components";
 
 export const ProjectsWrapper = tw.section`
     py-20 
+    mt-24
 `;
 
 export const ProjectsContainer = tw.div`
@@ -12,7 +13,6 @@ export const ProjectsContainer = tw.div`
     p-4 
     gap-x-24 
     gap-y-8 
-    mt-10 
 `;
 
 export const ProjectCard = tw.div`
@@ -132,6 +132,3 @@ export const DemoLinkText = tw.p`
     md:text-xs 
     text-sm 
 `;
-
-
-

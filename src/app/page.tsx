@@ -1,9 +1,10 @@
 import Grid from "@/components/grid/grid.component";
 import Hero from "@/components/hero/hero.component";
 import Projects from "@/components/projects/projects.component";
-import { FloatingNav } from "@/components/ui/FloatingNav";
+import { FloatingNav } from "@/components/ui/floating-nav.ui";
 import { navItems } from "../../data";
 import Collegues from "@/components/colleagues/colleagues.component";
+import Experience from "@/components/experience/experience.component";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Grid />
         <Projects />
         <Collegues />
+        <Experience />
       </div>
     </main>
   );

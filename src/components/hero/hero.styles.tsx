@@ -1,6 +1,6 @@
 'use client'
 import tw from "tailwind-styled-components";
-import { TextGenerateEffect } from "../ui/TextGenerateEffect";
+import { TextGenerateEffect } from "../ui/text-generate-effect.ui";
 
 export const HeroWrapper = tw.div`
     pb-20 
