@@ -3,7 +3,7 @@ import tw from "tailwind-styled-components";
 
 export const ProjectsWrapper = tw.section`
     py-20 
-    mt-24
+    mt-10
 `;
 
 export const ProjectsContainer = tw.div`

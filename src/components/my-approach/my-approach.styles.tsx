@@ -2,7 +2,7 @@ import tw from "tailwind-styled-components";
 
 export const MyApproachWrapper = tw.section`
     w-full 
-    py-20
+    pt-24
 `;
 
 export const MyApproachContainer = tw.div`

@@ -1,7 +1,7 @@
 import tw from "tailwind-styled-components";
 
 export const ColleaguesWrapper = tw.section`
-    py-20 
+    pb-20 
 `;
 
 export const ColleaguesContainer = tw.div`

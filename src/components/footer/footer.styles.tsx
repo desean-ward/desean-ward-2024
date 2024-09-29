@@ -4,7 +4,7 @@ export const FooterWrapper = tw.footer`
     w-full
     pt-20 
     pb-10 
-    z-20
+    px-5
 `;
 
 export const FooterBackground = tw.div`

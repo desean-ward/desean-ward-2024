@@ -4,6 +4,7 @@ import { Button } from "../ui/moving-borders.ui";
 
 export const ExperienceWrapper = tw.section`
     px-4
+    mt-10
 `;
 
 export const ExperienceContainer = tw.div`

@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    img: "/iphone15.png",
     iconLists: [
       "/next.svg",
       "/tail.svg",
