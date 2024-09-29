@@ -22,6 +22,8 @@ import {
   DemoLinkText,
 } from "./projects.styles";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import MagicButton from "../ui/magic-button.ui";
+import { IoMdDownload } from "react-icons/io";
 
 const Projects = () => {
   const [gitClicked, setGitClicked] = useState(false);
@@ -122,6 +124,18 @@ const Projects = () => {
             </PinContainer>
           </ProjectCard>
         ))}
+
+        {/* Resume Download */}
+        <div className='flex w-screen max-w-7xl justify-center items-center gap-2'>
+          <a href='/files/desean-ward.docx' download>
+            <MagicButton
+              title='Resume'
+              icon={<IoMdDownload />}
+              position='right'
+              otherClasses='text-xl hover:text-purple'
+            />
+          </a>
+        </div>
       </ProjectsContainer>
     </ProjectsWrapper>
   );
