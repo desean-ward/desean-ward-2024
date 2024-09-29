@@ -1,3 +1,4 @@
+import Link from "next/link";
 import tw from "tailwind-styled-components";
 
 export const ProjectsWrapper = tw.section`
@@ -106,13 +107,13 @@ export const WebsitesContainer = tw.div`
     gap-4
 `;
 
-export const GitHubLink = tw.a`
+export const GitHubLink = tw.p`
     flex 
     items-center 
     hover:text-purple
 `;
 
-export const GitHubLinkText = tw.p`
+export const GitHubLinkText = tw(Link)`
     flex 
     lg:text-xl 
     md:text-xs

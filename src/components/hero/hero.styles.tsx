@@ -72,6 +72,4 @@ export const Intro = tw.p`
     text-sm 
     md:text-lg 
     lg:text-2xl
-    
-
 `

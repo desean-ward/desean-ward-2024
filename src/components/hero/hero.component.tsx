@@ -11,6 +11,7 @@ import {
   Intro,
   SubHeading,
 } from "./hero.styles";
+import { GrProjects } from "react-icons/gr";
 
 const Hero = () => {
   return (
@@ -49,9 +50,10 @@ const Hero = () => {
           {/* Show My Work Button */}
           <a href='#projects'>
             <MagicButton
-              title='Show my work'
-              icon={<FaLocationArrow />}
+              title='View My Projects'
+              icon={<GrProjects />}
               position='right'
+              otherClasses='flex items-center text-xl hover:text-purple'
             />
           </a>
         </ContentContainer>

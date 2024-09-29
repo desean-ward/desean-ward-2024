@@ -93,6 +93,7 @@ export const projects = [
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://github.com/adrianhajdin?tab=repositories",
+    gitUrl: "",
   },
   {
     id: 3,
@@ -101,6 +102,7 @@ export const projects = [
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://github.com/adrianhajdin/zoom-clone",
+    gitUrl: "",
   },
   {
     id: 4,
@@ -196,13 +198,11 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    socialUrl: "https://www.github.com/desean-ward/",
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    socialUrl: "https://www.linkedin.com/in/desean-ward",
   },
 ];

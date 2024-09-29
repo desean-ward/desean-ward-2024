@@ -58,6 +58,7 @@ const Experience = () => {
               title='Resume'
               icon={<IoMdDownload />}
               position='right'
+              otherClasses='text-xl hover:text-purple'
             />
           </a>
         </div>

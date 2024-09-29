@@ -18,7 +18,7 @@ export const ExperienceCard = tw(Button)`
     flex-1 
     text-white 
     border-neutrual-200 
-    dark:border-slate-800
+    dark:border-slate-700
 `;
 
 export const CardContainer = tw.div`

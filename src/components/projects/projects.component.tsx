@@ -96,10 +96,10 @@ const Projects = () => {
                       <GitHubLink
                         onMouseOver={() => setGitClicked(true)}
                         onMouseOut={() => setGitClicked(false)}
-                        href={gitUrl}
-                        target='_blank'
                       >
-                        <GitHubLinkText>GitHub</GitHubLinkText>
+                        <GitHubLinkText href={gitUrl} target='_blank'>
+                          GitHub
+                        </GitHubLinkText>
 
                         {/* New Window Arrow */}
                         <FaArrowUpRightFromSquare className='ms-3' />
