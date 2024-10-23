@@ -52,7 +52,7 @@ const Experience = () => {
         ))}
 
         {/* Resume Download */}
-        <div className='flex w-screen max-w-7xl justify-center items-center gap-2'>
+        <div className='flex md:w-screen max-w-7xl justify-center items-center gap-2'>
           <a href='/files/desean-ward.docx' download>
             <MagicButton
               title='Resume'

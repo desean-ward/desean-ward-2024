@@ -6,14 +6,16 @@ import {
   FooterWrapper,
 } from "./footer.styles";
 import MagicButton from "../ui/magic-button.ui";
-import { FaLocationArrow } from "react-icons/fa";
 import { socialMedia } from "../../../data";
 import { TfiEmail } from "react-icons/tfi";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <FooterWrapper id='contact' className='relative z-10'>
+    <FooterWrapper
+      id='contact'
+      className='relative w-full z-10 overflow-hidden'
+    >
       {" "}
       {/* Ensure a high z-index */}
       {/* Background Image */}
@@ -22,9 +24,8 @@ const Footer = () => {
         {/* Prevent background from blocking */}
         <Image
           src='/footer-grid.svg'
-          width={100}
-          height={100}
-          className='w-full h-full opacity-50'
+          fill={true}
+          className='w-full h-full overflow-hidden'
           alt='grid'
         />
       </FooterBackground>
@@ -61,12 +62,12 @@ const Footer = () => {
           &copy;{new Date().getFullYear()} De Sean Ward
         </p>
         {/* Social Links */}
-        <div className='flex items-center md:gap-6 gap-2 mt-2 md:mt-0'>
+        <div className='flex items-center md:gap-6 gap-3 mt-2 md:mt-0'>
           {socialMedia.map((profile) => (
             <Link
               key={profile.id}
               href={profile.socialUrl}
-              className='size-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-100 bg-opacity-75 bg-black-200 rounded-lg border border-white/30'
+              className='size-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-white/30'
               target='_blank'
             >
               <Image
