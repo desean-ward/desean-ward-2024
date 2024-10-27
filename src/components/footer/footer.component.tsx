@@ -44,7 +44,7 @@ const Footer = () => {
           achieve your goals.
         </p>
         {/* Email Button */}
-        <Link href='mailto:dward@desean-ward.me'>
+        <Link href='mailto:dward@desean-ward.me' className="mb-8">
           <MagicButton
             title="Let's get in touch"
             icon={<TfiEmail />}
@@ -52,6 +52,7 @@ const Footer = () => {
             otherClasses='flex items-center text-xl hover:text-purple py-2 px-4'
           />
         </Link>
+
       </FooterContent>
       {/* Copyright and Links */}
       <div className='flex mt-16 md:flex-row flex-col justify-between items-center relative z-20'>

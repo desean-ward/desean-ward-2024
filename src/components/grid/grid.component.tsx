@@ -36,7 +36,7 @@ const Grid = () => {
       </BentoGrid>
 
       {/* Resume Download */}
-      <div className='flex w-screen max-w-7xl justify-center items-center gap-2 mt-10'>
+      <div className='flex w-screen max-w-7xl justify-center items-center gap-2 mt-10 relative left-[-2.5rem]'>
         <a href='/files/desean-ward.docx' download>
           <MagicButton
             title='Resume'

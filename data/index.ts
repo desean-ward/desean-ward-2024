@@ -188,7 +188,7 @@ export const workExperience = [
   {
     id: 4,
     title: "Web Developer / Content Management / Systems Analyst",
-    desc: "While at Blue Cross and Blue Shield, Ieveloped and/or modified 100’s of web pages across multiple state divisions; while consistently meeting 98% SLA deadlines.",
+    desc: "While at Blue Cross and Blue Shield, I developed and/or modified 100’s of web pages across multiple state divisions; while consistently meeting 98% SLA deadlines.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
