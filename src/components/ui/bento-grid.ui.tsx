@@ -3,12 +3,20 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { BackgroundGradientAnimation } from "./gradient-bg.ui";
+// import { BackgroundGradientAnimation } from "./gradient-bg.ui";
 import { GlobeDemo } from "./grid-globe.ui";
 import animationData from "../../../data/confetti.json";
 import Lottie from "react-lottie";
 import MagicButton from "./magic-button.ui";
 import { IoCopyOutline } from "react-icons/io5";
+
+import dynamic from 'next/dynamic'
+ 
+const BackgroundGradientAnimation = dynamic(
+  () => import("./gradient-bg.ui").then((mod) => mod.BackgroundGradientAnimation),
+  { ssr: false } // Disable SSR if necessary
+);
+
 
 export const BentoGrid = ({
   className,
@@ -101,7 +109,7 @@ export const BentoGridItem = ({
         </div>
 
         {/* Background Animation */}
-        {/* id === 6 && <BackgroundGradientAnimation /> */}
+        {id === 6 && <BackgroundGradientAnimation  />}
         {/* Content */}
         <div
           className={cn(
