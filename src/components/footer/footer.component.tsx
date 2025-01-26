@@ -9,8 +9,13 @@ import MagicButton from "../ui/magic-button.ui";
 import { socialMedia } from "../../../data";
 import { TfiEmail } from "react-icons/tfi";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const Footer = () => {
+    useEffect(() => {
+      if (typeof document === "undefined") return;
+    }, []);
+  
   return (
     <FooterWrapper
       id='contact'

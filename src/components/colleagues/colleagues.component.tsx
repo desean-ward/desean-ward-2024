@@ -3,8 +3,13 @@ import { companies, testimonials } from "../../../data";
 import { InfiniteMovingCards } from "../ui/infinite-cards.ui";
 import { ColleaguesContainer, ColleaguesWrapper } from "./colleagues.styles";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const Colleagues = () => {
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+  }, []);
+
   return (
     <ColleaguesWrapper id='testimonials'>
       {/* Heading */}

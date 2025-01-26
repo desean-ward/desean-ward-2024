@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import MagicButton from "../ui/magic-button.ui";
 import { Spotlight } from "../ui/spotlight.ui";
 import {
@@ -13,6 +14,10 @@ import {
 import { GrProjects } from "react-icons/gr";
 
 const Hero = () => {
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+  }, []);
+
   return (
     <HeroWrapper>
       <div>

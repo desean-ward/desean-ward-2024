@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { projects } from "../../../data";
 import { PinContainer } from "../ui/3d-pin.ui";
@@ -27,6 +27,11 @@ import { IoMdDownload } from "react-icons/io";
 
 const Projects = () => {
   const [gitClicked, setGitClicked] = useState(false);
+
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+  }, []);
+
 
   return (
     <ProjectsWrapper id='projects'>

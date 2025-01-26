@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal.ui";
@@ -17,6 +17,10 @@ import {
 } from "./my-approach.styles";
 
 const MyApproach = () => {
+    useEffect(() => {
+      if (typeof document === "undefined") return;
+    }, []);
+  
   return (
     <MyApproachWrapper>
       <h1 className='heading'>
