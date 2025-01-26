@@ -14,7 +14,7 @@ import dynamic from 'next/dynamic'
  
 const BackgroundGradientAnimation = dynamic(
   () => import("./gradient-bg.ui").then((mod) => mod.BackgroundGradientAnimation),
-  { ssr: false } // Disable SSR if necessary
+  { ssr: false }
 );
 
 
