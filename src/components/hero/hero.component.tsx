@@ -52,7 +52,7 @@ const Hero = () => {
               title='View My Projects'
               icon={<GrProjects />}
               position='right'
-              otherClasses='flex items-center text-xl hover:text-purple'
+              otherClasses='flex items-center hover:text-purple'
             />
           </a>
         </ContentContainer>

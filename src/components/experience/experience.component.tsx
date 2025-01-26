@@ -14,7 +14,7 @@ const Experience = () => {
     <ExperienceWrapper>
       {/* Heading */}
       <h1 className='heading'>
-        My <span className='text-purple'>work experience</span>
+        My <span className='text-purple'>experience</span>
       </h1>
 
       {/* Grid Container */}

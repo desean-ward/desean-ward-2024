@@ -56,9 +56,7 @@ const Projects = () => {
                   width={464}
                   height={300}
                   alt={title}
-                  className={`absolute bottom-0 ${
-                    id === 4 || id === 1 ? "rotate-[2deg] h-[300px] -bottom-7" : ""
-                  }`}
+                  className="absolute -bottom-7 rotate-[2deg] h-[300px] "
                 />
               </ImageContainer>
 

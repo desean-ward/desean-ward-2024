@@ -73,7 +73,7 @@ export const projects = [
   {
     id: 1,
     title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "Recreation of the Apple iPhone 15 Pro website",
     img: "/iphone15.png",
     iconLists: [
       "/next.svg",
@@ -88,26 +88,36 @@ export const projects = [
 
   {
     id: 2,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
-    gitUrl: "",
+    title: "Timeless Interiors",
+    des: "Timeless Interiors: A Full Stack Interior Design Agency",
+    img: "/timeless-interiors.png",
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/gsap.svg",
+      "/styled-components.png",
+    ],
+    link: "https://timeless-interiors.vercel.app/",
+    gitUrl: "https://github.com/desean-ward/timeless-interiors",
   },
   {
     id: 3,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
-    gitUrl: "",
+    title: "DW Fazhionz!",
+    des: "D.W. Fazhionz!: A Full Stack Fashion e-Commerce Application",
+    img: "/dw-fazhionz.jpg",
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/gsap.svg",
+      "/styled-components.png",
+    ],
+    link: "https://dw-fazhionz.vercel.app/",
+    gitUrl: "https://github.com/desean-ward/dw-fazhionz",
   },
   {
     id: 4,
     title: "Brainwave",
-    des: "Introducing Brainwave, a fully-featured AI landing page.",
+    des: "Introducing Brainwave, a fully-featured AI landing page",
     img: "/brainwave.png",
     iconLists: ["/next.svg", "/tail.svg", "/styled-components.png"],
     link: "https://dw-brainwave.vercel.app",
@@ -125,17 +135,24 @@ export const testimonials = [
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    img: "",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with De Sean has been an absolute game-changer for our projects. As a fellow engineer, I've witnessed firsthand how De Sean combines technical brilliance with practical problem-solving. Last year, we were struggling with a sluggish legacy system, and De Sean led the migration to a modern, scalable architecture without missing a beat.",
+    img: "/james-harper.webp",
+    name: "James Harper",
+    title: "Senior Software Architect",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    img: "",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "It’s rare to find a software engineer as versatile and reliable as De Sean. When we worked together on a SaaS platform overhaul, De Sean not only delivered impeccable front-end functionality with Vue.js but also restructured the backend for optimal performance. Their knack for debugging and attention to detail saved us countless hours and headaches.",
+    img: "/olivia-bennet.webp",
+    name: "Olivia Bennet",
+    title: "Front-End Developer & UX Specialist",
+  },
+  {
+    quote:
+      "If there’s one person who can turn complex requirements into elegant solutions, it’s De Sean. I had the pleasure of collaborating with them on a challenging fintech project, and their ability to simplify intricate processes was nothing short of extraordinary. His knowledge spans the full tech stack, but his real superpower is the way they make every stakeholder—from designers to product managers—feel valued.",
+    img: "/michael-grant.webp",
+    name: "Michael Grant",
+    title: "IT Project Manager",
   },
 ];
 
