@@ -1,27 +1,10 @@
 "use client";
+
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState } from "react";
 
-// Define the Props interface for the component
-interface BackgroundGradientProps {
-  gradientBackgroundStart?: string;
-  gradientBackgroundEnd?: string;
-  firstColor?: string;
-  secondColor?: string;
-  thirdColor?: string;
-  fourthColor?: string;
-  fifthColor?: string;
-  pointerColor?: string;
-  size?: string;
-  blendingValue?: string;
-  children?: React.ReactNode;
-  className?: string;
-  interactive?: boolean;
-  containerClassName?: string;
-}
-
-// Define the functional component with React.FC<Props>
-export const BackgroundGradientAnimation: React.FC<BackgroundGradientProps> = ({
+// Keep the inline props structure as it is
+export const BackgroundGradientAnimation = ({
   gradientBackgroundStart = "rgb(108, 0, 162)",
   gradientBackgroundEnd = "rgb(0, 17, 82)",
   firstColor = "18, 113, 255",
@@ -36,6 +19,21 @@ export const BackgroundGradientAnimation: React.FC<BackgroundGradientProps> = ({
   className,
   interactive = true,
   containerClassName,
+}: {
+  gradientBackgroundStart?: string;
+  gradientBackgroundEnd?: string;
+  firstColor?: string;
+  secondColor?: string;
+  thirdColor?: string;
+  fourthColor?: string;
+  fifthColor?: string;
+  pointerColor?: string;
+  size?: string;
+  blendingValue?: string;
+  children?: React.ReactNode;
+  className?: string;
+  interactive?: boolean;
+  containerClassName?: string;
 }) => {
   const interactiveRef = useRef<HTMLDivElement>(null);
 
@@ -111,21 +109,21 @@ export const BackgroundGradientAnimation: React.FC<BackgroundGradientProps> = ({
         containerClassName
       )}
     >
-      <svg className='hidden'>
+      <svg className="hidden">
         <defs>
-          <filter id='blurMe'>
+          <filter id="blurMe">
             <feGaussianBlur
-              in='SourceGraphic'
-              stdDeviation='10'
-              result='blur'
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="blur"
             />
             <feColorMatrix
-              in='blur'
-              mode='matrix'
-              values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8'
-              result='goo'
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+              result="goo"
             />
-            <feBlend in='SourceGraphic' in2='goo' />
+            <feBlend in="SourceGraphic" in2="goo" />
           </filter>
         </defs>
       </svg>
@@ -136,7 +134,7 @@ export const BackgroundGradientAnimation: React.FC<BackgroundGradientProps> = ({
           isSafari ? "blur-2xl" : "[filter:url(#blurMe)_blur(40px)]"
         )}
       >
-        {/* Animated Gradient Circles */}
+        {/* Gradient Circles */}
         <div
           className={cn(
             `absolute [background:radial-gradient(circle_at_center,_var(--first-color)_0,_var(--first-color)_50%)_no-repeat]`,
@@ -146,7 +144,7 @@ export const BackgroundGradientAnimation: React.FC<BackgroundGradientProps> = ({
             `opacity-100`
           )}
         ></div>
-        {/* Other gradient circles... */}
+        {/* Other gradient circles */}
         {interactive && (
           <div
             ref={interactiveRef}
