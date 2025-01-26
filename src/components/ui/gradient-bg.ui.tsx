@@ -43,10 +43,9 @@ export const BackgroundGradientAnimation = ({
   const [tgY, setTgY] = useState(0);
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    if (typeof document === "undefined") return;
+    if (typeof window === "undefined" || typeof document === "undefined")
+      return;
 
-    // Set CSS variables on the body
     document.body.style.setProperty(
       "--gradient-background-start",
       gradientBackgroundStart
@@ -109,21 +108,21 @@ export const BackgroundGradientAnimation = ({
         containerClassName
       )}
     >
-      <svg className="hidden">
+      <svg className='hidden'>
         <defs>
-          <filter id="blurMe">
+          <filter id='blurMe'>
             <feGaussianBlur
-              in="SourceGraphic"
-              stdDeviation="10"
-              result="blur"
+              in='SourceGraphic'
+              stdDeviation='10'
+              result='blur'
             />
             <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-              result="goo"
+              in='blur'
+              mode='matrix'
+              values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8'
+              result='goo'
             />
-            <feBlend in="SourceGraphic" in2="goo" />
+            <feBlend in='SourceGraphic' in2='goo' />
           </filter>
         </defs>
       </svg>
