@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import { GridContainer } from "./grid.styles";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid.ui";
 import { gridItems } from "../../../data";
