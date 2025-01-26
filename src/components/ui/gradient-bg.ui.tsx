@@ -40,7 +40,7 @@ export const BackgroundGradientAnimation = ({
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
   useEffect(() => {
-    if (!document || !document.body) {
+    if (typeof document === "undefined") {
       return;
     }
 
