@@ -101,7 +101,7 @@ export const BentoGridItem = ({
         </div>
 
         {/* Background Animation */}
-        {id === 6 && <BackgroundGradientAnimation />}
+        {/* id === 6 && <BackgroundGradientAnimation /> */}
         {/* Content */}
         <div
           className={cn(
