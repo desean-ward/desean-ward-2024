@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-// import { BackgroundGradientAnimation } from "./gradient-bg.ui";
+import { BackgroundGradientAnimation } from "./gradient-bg.ui";
 import { GlobeDemo } from "./grid-globe.ui";
 import animationData from "../../../data/confetti.json";
 import Lottie from "react-lottie";
@@ -108,7 +108,7 @@ export const BentoGridItem = ({
         </div>
 
         {/* Background Animation */}
-        {/* id === 6 && <BackgroundGradientAnimation  /> */}
+        {id === 6 && <BackgroundGradientAnimation />}
         {/* Content */}
         <div
           className={cn(

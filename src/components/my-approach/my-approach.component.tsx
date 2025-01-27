@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import React, { useEffect } from "react";
+import { useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal.ui";
@@ -17,9 +17,6 @@ import {
 } from "./my-approach.styles";
 
 const MyApproach = () => {
-    useEffect(() => {
-      if (typeof document === "undefined") return;
-    }, []);
   
   return (
     <MyApproachWrapper>
@@ -85,7 +82,7 @@ const Card = ({
   children?: React.ReactNode;
   description: string;
 }) => {
-  const [hovered, setHovered] = React.useState(false);
+  const [hovered, setHovered] = useState(false);
   return (
     <CardContainer
       onMouseEnter={() => setHovered(true)}

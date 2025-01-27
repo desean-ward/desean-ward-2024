@@ -1,4 +1,3 @@
-'use client'
 import Image from "next/image";
 import { workExperience } from "../../../data";
 import {
@@ -9,13 +8,8 @@ import {
 } from "./experience.styles";
 import MagicButton from "../ui/magic-button.ui";
 import { IoMdDownload } from "react-icons/io";
-import { useEffect } from "react";
 
 const Experience = () => {
-    useEffect(() => {
-      if (typeof document === "undefined") return;
-    }, []);
-  
   return (
     <ExperienceWrapper>
       {/* Heading */}
