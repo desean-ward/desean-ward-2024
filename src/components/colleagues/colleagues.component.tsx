@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import { companies, testimonials } from "../../../data";
 import { InfiniteMovingCards } from "../ui/infinite-cards.ui";

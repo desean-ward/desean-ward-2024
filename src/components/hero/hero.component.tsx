@@ -1,3 +1,4 @@
+'use client'
 import { useEffect } from "react";
 import MagicButton from "../ui/magic-button.ui";
 import { Spotlight } from "../ui/spotlight.ui";
