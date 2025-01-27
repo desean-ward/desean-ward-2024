@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { BackgroundGradientAnimation } from "./gradient-bg.ui";
+// import { BackgroundGradientAnimation } from "./gradient-bg.ui";
 import { GlobeDemo } from "./grid-globe.ui";
 import animationData from "../../../data/confetti.json";
 import Lottie from "react-lottie";
@@ -12,10 +12,10 @@ import { IoCopyOutline } from "react-icons/io5";
 
 import dynamic from "next/dynamic";
 
-// const BackgroundGradientAnimation = dynamic(
-//   () => import("./gradient-bg.ui").then((mod) => mod.BackgroundGradientAnimation),
-//   { ssr: false }
-// );
+const BackgroundGradientAnimation = dynamic(
+  () => import("./gradient-bg.ui").then((mod) => mod.BackgroundGradientAnimation),
+  { ssr: false }
+);
 
 export const BentoGrid = ({
   className,

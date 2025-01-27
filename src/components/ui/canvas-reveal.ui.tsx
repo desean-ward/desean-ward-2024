@@ -2,7 +2,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import React, { useMemo, useRef } from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import * as THREE from "three";
 
 export const CanvasRevealEffect = ({
@@ -24,6 +24,13 @@ export const CanvasRevealEffect = ({
   dotSize?: number;
   showGradient?: boolean;
 }) => {
+  useEffect(() => {
+    // Ensure this code only runs in the browser
+    if (typeof window === "undefined" || typeof document === "undefined") {
+      return;
+    }
+  }, []);
+
   return (
     <div className={cn("h-full relative bg-white w-full", containerClassName)}>
       <div className='h-full w-full'>
