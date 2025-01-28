@@ -3,17 +3,21 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-// import { BackgroundGradientAnimation } from "./gradient-bg.ui";
 import { GlobeDemo } from "./grid-globe.ui";
 import animationData from "../../../data/confetti.json";
-// import Lottie from "react-lottie";
 import MagicButton from "./magic-button.ui";
 import { IoCopyOutline } from "react-icons/io5";
+import Lottie from "lottie-react";
 
 import dynamic from "next/dynamic";
 
 // Dynamic Imports
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+// const Lottie = dynamic(
+//   () => import("lottie-react").then((mod) => mod.Lottie),
+//   {
+//     ssr: false, // Prevent server-side rendering
+//   }
+// );
 
 const BackgroundGradientAnimation = dynamic(
   () =>
@@ -68,10 +72,18 @@ export const BentoGridItem = ({
 }) => {
   /* State for Lottie */
   const [copied, setCopied] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
 
   const handleCopy = () => {
     navigator.clipboard.writeText("dward@desean-ward.me");
     setCopied(true);
+    setShowConfetti(true);
+
+    const timeout = setTimeout(() => {
+      setShowConfetti(false);
+    }, 100);
+
+    return () => clearTimeout(timeout);
   };
 
   useEffect(() => {
@@ -93,13 +105,17 @@ export const BentoGridItem = ({
     >
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className='size-full absolute'>
+          {/* All Cards */}
           {img && (
             <Image
               src={img}
               alt={img}
-              width={100}
+              width={`${id === 1 ? 800 : 200}`}
               height={100}
-              className={cn(imgClassName, "object-cover, object-center")}
+              className={cn(
+                imgClassName,
+                "object-cover, object-center absolute bottom-0 right-0"
+              )}
             />
           )}
         </div>
@@ -115,12 +131,12 @@ export const BentoGridItem = ({
               alt={spareImg}
               width={100}
               height={100}
-              className={"object-cover object-center size-full"}
+              className={"size-full object-cover object-center"}
             />
           )}
         </div>
 
-        {/* Background Animation */}
+        {/* Copy Email Background Animation */}
         {id === 6 && <BackgroundGradientAnimation />}
         {/* Content */}
         <div
@@ -142,7 +158,7 @@ export const BentoGridItem = ({
           {/* Interactive Globe Animation */}
           <div className='cursor-pointer'>{id === 2 && <GlobeDemo />}</div>
 
-          {/* Grid #3 */}
+          {/* My Tech Stack */}
           {id === 3 && (
             <div className='flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2'>
               {/* Tech Stack */}
@@ -176,16 +192,12 @@ export const BentoGridItem = ({
           {/* Confettie Animation */}
           {id === 6 && (
             <div className='mt-5 relative'>
-              <div className={`absolute -bottom-5 right-0`}>
+              <div className={`absolute -bottom-3 right-0`}>
                 <Lottie
-                  options={{
-                    loop: copied,
-                    autoplay: copied,
-                    animationData: animationData,
-                    rendererSettings: {
-                      preserveAspectRatio: "xMidYMid slice",
-                    },
-                  }}
+                  autoplay={copied}
+                  loop={showConfetti}
+                  animationData={animationData}
+                  style={{ height: "400px", width: "400px" }}
                 />
               </div>
 
