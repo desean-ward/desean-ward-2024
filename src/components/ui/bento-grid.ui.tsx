@@ -25,9 +25,6 @@ export const BentoGrid = ({
   className?: string;
   children?: React.ReactNode;
 }) => {
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-  }, []);
 
   return (
     <div

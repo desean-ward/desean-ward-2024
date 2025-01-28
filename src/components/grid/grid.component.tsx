@@ -8,7 +8,7 @@ import { IoMdDownload } from "react-icons/io";
 
 const Grid = () => {
   useEffect(() => {
-    if (typeof window === "undefined") return;
+    if (typeof document === "undefined") return;
   }, []);
 
   return (
