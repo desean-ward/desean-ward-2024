@@ -12,6 +12,9 @@ import { IoCopyOutline } from "react-icons/io5";
 
 import dynamic from "next/dynamic";
 
+// Dynamic Imports
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+
 const BackgroundGradientAnimation = dynamic(
   () =>
     import("./gradient-bg.ui").then((mod) => mod.BackgroundGradientAnimation),
@@ -171,10 +174,10 @@ export const BentoGridItem = ({
           )}
 
           {/* Confettie Animation */}
-          { id === 6 && (
+          {id === 6 && (
             <div className='mt-5 relative'>
               <div className={`absolute -bottom-5 right-0`}>
-                {/* <Lottie
+                <Lottie
                   options={{
                     loop: copied,
                     autoplay: copied,
@@ -183,7 +186,7 @@ export const BentoGridItem = ({
                       preserveAspectRatio: "xMidYMid slice",
                     },
                   }}
-                /> */}
+                />
               </div>
 
               <MagicButton
@@ -194,7 +197,7 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
               />
             </div>
-          ) }
+          )}
         </div>
       </div>
     </div>

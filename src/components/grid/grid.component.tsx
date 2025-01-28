@@ -8,11 +8,8 @@ import { IoMdDownload } from "react-icons/io";
 
 const Grid = () => {
   useEffect(() => {
-    if (typeof document === "undefined" || typeof window === "undefined") {
-      alert("Document or window is undefined grid.component.tsx");
-    }
-
-    return;
+    if (typeof document === "undefined" || typeof window === "undefined")
+      return;
   }, []);
 
   return (
