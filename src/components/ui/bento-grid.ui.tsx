@@ -1,6 +1,6 @@
 "use client";
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 // import { BackgroundGradientAnimation } from "./gradient-bg.ui";
@@ -13,7 +13,8 @@ import { IoCopyOutline } from "react-icons/io5";
 import dynamic from "next/dynamic";
 
 const BackgroundGradientAnimation = dynamic(
-  () => import("./gradient-bg.ui").then((mod) => mod.BackgroundGradientAnimation),
+  () =>
+    import("./gradient-bg.ui").then((mod) => mod.BackgroundGradientAnimation),
   { ssr: false }
 );
 
@@ -24,6 +25,10 @@ export const BentoGrid = ({
   className?: string;
   children?: React.ReactNode;
 }) => {
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+  }, []);
+
   return (
     <div
       className={cn(
