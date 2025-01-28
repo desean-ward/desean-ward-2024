@@ -6,7 +6,7 @@ import Image from "next/image";
 // import { BackgroundGradientAnimation } from "./gradient-bg.ui";
 import { GlobeDemo } from "./grid-globe.ui";
 import animationData from "../../../data/confetti.json";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 import MagicButton from "./magic-button.ui";
 import { IoCopyOutline } from "react-icons/io5";
 
@@ -69,11 +69,12 @@ export const BentoGridItem = ({
   {
     /* State for Lottie */
   }
-  const [copied, setCopied] = useState(false);
-  const handleCopy = () => {
-    navigator.clipboard.writeText("dward@desean-ward.me");
-    setCopied(true);
-  };
+  // const [copied, setCopied] = useState(false);
+  // const handleCopy = () => {
+  //   navigator.clipboard.writeText("dward@desean-ward.me");
+  //   setCopied(true);
+  // };
+  
   useEffect(() => {
     if (typeof document === "undefined" || typeof window === "undefined") {
       alert("Document or window is undefined bento-grid-item.ui.tsx");
@@ -177,7 +178,7 @@ export const BentoGridItem = ({
           )}
 
           {/* Confettie Animation */}
-          {id === 6 && (
+          {/* id === 6 && (
             <div className='mt-5 relative'>
               <div className={`absolute -bottom-5 right-0`}>
                 <Lottie
@@ -200,7 +201,7 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
               />
             </div>
-          )}
+          ) */}
         </div>
       </div>
     </div>
