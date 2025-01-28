@@ -26,11 +26,8 @@ export const BentoGrid = ({
   children?: React.ReactNode;
 }) => {
   useEffect(() => {
-    if (typeof document === "undefined" || typeof window === "undefined") {
-      alert("Document or window is undefined bento.ui.tsx");
-    }
-
-    return;
+    if (typeof document === "undefined" || typeof window === "undefined")
+      return;
   }, []);
 
   return (
@@ -66,21 +63,17 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  {
-    /* State for Lottie */
-  }
-  // const [copied, setCopied] = useState(false);
-  // const handleCopy = () => {
-  //   navigator.clipboard.writeText("dward@desean-ward.me");
-  //   setCopied(true);
-  // };
-  
-  useEffect(() => {
-    if (typeof document === "undefined" || typeof window === "undefined") {
-      alert("Document or window is undefined bento-grid-item.ui.tsx");
-    }
+  /* State for Lottie */
+  const [copied, setCopied] = useState(false);
 
-    return;
+  const handleCopy = () => {
+    navigator.clipboard.writeText("dward@desean-ward.me");
+    setCopied(true);
+  };
+
+  useEffect(() => {
+    if (typeof document === "undefined" || typeof window === "undefined")
+      return;
   }, []);
 
   return (
@@ -178,10 +171,10 @@ export const BentoGridItem = ({
           )}
 
           {/* Confettie Animation */}
-          {/* id === 6 && (
+          { id === 6 && (
             <div className='mt-5 relative'>
               <div className={`absolute -bottom-5 right-0`}>
-                <Lottie
+                {/* <Lottie
                   options={{
                     loop: copied,
                     autoplay: copied,
@@ -190,7 +183,7 @@ export const BentoGridItem = ({
                       preserveAspectRatio: "xMidYMid slice",
                     },
                   }}
-                />
+                /> */}
               </div>
 
               <MagicButton
@@ -201,7 +194,7 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
               />
             </div>
-          ) */}
+          ) }
         </div>
       </div>
     </div>
