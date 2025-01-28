@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
 
 const World = dynamic(() => import("./globe.ui").then((m) => m.World), {
@@ -7,6 +7,10 @@ const World = dynamic(() => import("./globe.ui").then((m) => m.World), {
 });
 
 export function GlobeDemo() {
+    useEffect(() => {
+      if (typeof document === "undefined") return;
+    }, []);
+  
   const globeConfig = {
     pointSize: 4,
     globeColor: "#062056",
