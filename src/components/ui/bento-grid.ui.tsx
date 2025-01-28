@@ -7,17 +7,14 @@ import { GlobeDemo } from "./grid-globe.ui";
 import animationData from "../../../data/confetti.json";
 import MagicButton from "./magic-button.ui";
 import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
 
 import dynamic from "next/dynamic";
 
 // Dynamic Imports
-// const Lottie = dynamic(
-//   () => import("lottie-react").then((mod) => mod.Lottie),
-//   {
-//     ssr: false, // Prevent server-side rendering
-//   }
-// );
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false, // Prevent server-side rendering
+});
 
 const BackgroundGradientAnimation = dynamic(
   () =>
