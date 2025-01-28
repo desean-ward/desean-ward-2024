@@ -1,12 +1,12 @@
 import Grid from "@/components/grid/grid.component";
 import Hero from "@/components/hero/hero.component";
-import Projects from "@/components/projects/projects.component";
+// import Projects from "@/components/projects/projects.component";
 import { FloatingNav } from "@/components/ui/floating-nav.ui";
 import { navItems } from "../../data";
-import Collegues from "@/components/colleagues/colleagues.component";
-import Experience from "@/components/experience/experience.component";
-import MyApproach from "@/components/my-approach/my-approach.component";
-import Footer from "@/components/footer/footer.component";
+// import Collegues from "@/components/colleagues/colleagues.component";
+// import Experience from "@/components/experience/experience.component";
+// import MyApproach from "@/components/my-approach/my-approach.component";
+// import Footer from "@/components/footer/footer.component";
 
 export default function Home() {
   return (
@@ -14,12 +14,12 @@ export default function Home() {
       <div className='max-w-7xl w-full'>
         <FloatingNav navItems={navItems} />
         <Hero />
-        <Grid />
+        {/* <Grid />
         <Projects />
         <Collegues />
         <Experience />
         <MyApproach />
-        <Footer />
+        <Footer /> */}
       </div>
     </main>
   );
