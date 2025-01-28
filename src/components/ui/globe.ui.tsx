@@ -237,9 +237,11 @@ export function WebGLRendererConfig() {
   const { gl, size } = useThree();
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
+    if (typeof document === "undefined" || typeof window === "undefined") {
+      alert('Document or window is undefined globe.ui.tsx');  
+    }
 
-    gl.setPixelRatio(window.devicePixelRatio);
+    gl.setPixelRatio(devicePixelRatio);
     gl.setSize(size.width, size.height);
     gl.setClearColor(0xffaaff, 0);
   }, []);
