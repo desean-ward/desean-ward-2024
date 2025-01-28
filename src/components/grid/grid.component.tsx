@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { GridContainer } from "./grid.styles";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid.ui";
 import { gridItems } from "../../../data";
@@ -6,6 +6,10 @@ import MagicButton from "../ui/magic-button.ui";
 import { IoMdDownload } from "react-icons/io";
 
 const Grid = () => {
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+  }, []);
+
   return (
     <GridContainer id='about'>
       <BentoGrid>
