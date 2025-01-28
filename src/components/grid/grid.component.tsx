@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import { GridContainer } from "./grid.styles";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid.ui";
