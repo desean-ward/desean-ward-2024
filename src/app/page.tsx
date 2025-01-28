@@ -1,4 +1,4 @@
-import Grid from "@/components/grid/grid.component";
+// import Grid from "@/components/grid/grid.component";
 import Hero from "@/components/hero/hero.component";
 // import Projects from "@/components/projects/projects.component";
 import { FloatingNav } from "@/components/ui/floating-nav.ui";
