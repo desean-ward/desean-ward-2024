@@ -70,6 +70,13 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText("dward@desean-ward.me");
     setCopied(true);
   };
+  useEffect(() => {
+    if (typeof document === "undefined" || typeof window === "undefined") {
+      alert("Document or window is undefined bento-grid-item.ui.tsx");
+    }
+
+    return;
+  }, []);
 
   return (
     <div
