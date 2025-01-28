@@ -8,10 +8,11 @@ const World = dynamic(() => import("./globe.ui").then((m) => m.World), {
 
 export function GlobeDemo() {
   useEffect(() => {
-    if (typeof document === "undefined") {
-      alert("Document is undefined grid-globe.ui.tsx");
-      return;
+    if (typeof document === "undefined" || typeof window === "undefined") {
+      alert("Document or window is undefined bento.ui.tsx");
     }
+
+    return;
   }, []);
 
   const globeConfig = {

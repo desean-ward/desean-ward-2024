@@ -12,11 +12,11 @@ import { IoCopyOutline } from "react-icons/io5";
 
 import dynamic from "next/dynamic";
 
-const BackgroundGradientAnimation = dynamic(
-  () =>
-    import("./gradient-bg.ui").then((mod) => mod.BackgroundGradientAnimation),
-  { ssr: false }
-);
+// const BackgroundGradientAnimation = dynamic(
+//   () =>
+//     import("./gradient-bg.ui").then((mod) => mod.BackgroundGradientAnimation),
+//   { ssr: false }
+// );
 
 export const BentoGrid = ({
   className,
@@ -26,7 +26,11 @@ export const BentoGrid = ({
   children?: React.ReactNode;
 }) => {
   useEffect(() => {
-    if (typeof document === "undefined") return;
+    if (typeof document === "undefined" || typeof window === "undefined") {
+      alert("Document or window is undefined bento.ui.tsx");
+    }
+
+    return;
   }, []);
 
   return (
@@ -120,7 +124,7 @@ export const BentoGridItem = ({
         </div>
 
         {/* Background Animation */}
-        {id === 6 && <BackgroundGradientAnimation />}
+        {/*id === 6 && <BackgroundGradientAnimation /> */}
         {/* Content */}
         <div
           className={cn(
