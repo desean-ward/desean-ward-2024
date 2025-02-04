@@ -104,7 +104,7 @@ export const projects = [
     id: 3,
     title: "DW Fazhionz!",
     des: "D.W. Fazhionz!: A Full Stack Fashion e-Commerce Application",
-    img: "/dw-fazhionz.jpg",
+    img: "/dw-fazhionz.png",
     iconLists: [
       "/next.svg",
       "/tail.svg",
