@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "De Sean Ward",
-  description: "Modern & Minimalist Portfolio",
+  description: "Coffee, Code, & Creativity",
 };
 
 export default function RootLayout({
